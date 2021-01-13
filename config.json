@@ -8,6 +8,6 @@
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Copyright Text",
-  "usage-stats": false
+  "footer": "Copyright (c) 2021",
+  "usage-stats": true
 }
