@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - 01jan</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="01jan.html">01jan</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/01jan/428A45FA-D93B-4814-BFA3-91A32D113421.jpeg"
+                data-sub-html=""
+                data-download-url="media/original/01jan/428A45FA-D93B-4814-BFA3-91A32D113421.jpeg"
+                
+                data-filename="428A45FA-D93B-4814-BFA3-91A32D113421.jpeg"
+          
+              >
+              <a href="media/original/01jan/428A45FA-D93B-4814-BFA3-91A32D113421.jpeg">
+                <img src="media/thumbs/01jan/428A45FA-D93B-4814-BFA3-91A32D113421.jpeg"
+                     width="120"
+                     height="120"
+                     alt="428A45FA-D93B-4814-BFA3-91A32D113421.jpeg" />
+              </a>
+            </li>      
+            <li data-src="media/large/01jan/B9B82E05-2C67-46E2-902F-21FF1440F454.jpeg"
+                data-sub-html=""
+                data-download-url="media/original/01jan/B9B82E05-2C67-46E2-902F-21FF1440F454.jpeg"
+                
+                data-filename="B9B82E05-2C67-46E2-902F-21FF1440F454.jpeg"
+          
+              >
+              <a href="media/original/01jan/B9B82E05-2C67-46E2-902F-21FF1440F454.jpeg">
+                <img src="media/thumbs/01jan/B9B82E05-2C67-46E2-902F-21FF1440F454.jpeg"
+                     width="120"
+                     height="120"
+                     alt="B9B82E05-2C67-46E2-902F-21FF1440F454.jpeg" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright (c) 2021</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
